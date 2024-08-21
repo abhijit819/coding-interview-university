@@ -1,0 +1,28 @@
+1. DFS --> gfg --> dfs: https://practice.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
+2. Dijstras --> https://leetcode.com/submissions/detail/331537472/ --> priority_queue + comparison --> pair
+3. Krushkal --> https://www.hackerrank.com/challenges/kruskalmstrsub/problem --> union_find
+4. Prims --> https://www.hackerrank.com/challenges/primsmstsub/problem --> comparator in priority queue
+5. Floyd-Warshall --> https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall/0
+
+============
+May17, 2020:
+=============
+6. https://www.interviewbit.com/problems/convert-sorted-list-to-binary-search-tree/ --> binary search
+	mid = front + ((end - front) / 2);
+	understand the binary search with this code
+*7. https://www.interviewbit.com/problems/sum-of-fibonacci-numbers/
+	greedy --> use leverage from the series elements
+8. https://www.interviewbit.com/problems/black-shapes/ --> straight forward DFS
+*9. https://www.interviewbit.com/problems/largest-distance-between-nodes-of-a-tree/ --> good problem --> longest path in a tree
+10. https://www.interviewbit.com/problems/valid-path/ --> DFS & circles
+	euclidean distance is used to measure whether a point is inside the circle or not
+11. https://www.interviewbit.com/problems/smallest-sequence-with-given-primes/
+	hybrid (BFS + dijstra) traversal stragegy
+*12. https://www.interviewbit.com/problems/smallest-multiple-with-0-and-1/ --> good problem
+	first think of the tree --> root 1 -->left 10 --> right 11 --> 100 --> 101 --> 110 --> 111 --> .....
+	so we try to traverse the tree --> but time complexity is huge
+	consider the case of encoding each of the node to a remainder of N (i.e, module N). This will essentially reduce the set of solution candidates to N (i.e, 0 ... N-1)
+	there can be N number of remainder states --> so we try to traverse the tree of all possible solutions
+	where each of the numbers consisting of zeros & ones are mapped to a remainder (number % N)
+	this way if we again come back to a same state we don't traverse the subtree rooted at that node --> reducing the time complexity to O(N) where N is the input number
+

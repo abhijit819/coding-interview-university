@@ -1,0 +1,15 @@
+[0]https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays/0/
+Algo:
+	two pointers at start of each of the array
+	compare the values of the pointers
+	smaller value gets printed & the corresponding pointer is incremented
+
+	After crossing one of array boundary
+	print whichever array has elements left to print
+
+	Time Complexity: m+n where m,n are sizes of the two arrays
+	Space Complexity: constant
+
+Code link: https://ide.geeksforgeeks.org/1ClrlRQ7kC
+=========================================================
+[1]https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately/0/
